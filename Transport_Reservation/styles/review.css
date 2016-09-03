@@ -1,0 +1,30 @@
+.head{
+	float: left;
+}
+.head img{
+  float: left;
+}
+
+.head h1{
+  position: relative;
+  top: 0px;
+  left: 10px;
+}
+
+.head p{
+  position: relative;
+  top: 3px;
+  left: 20px;
+}
+
+.basic-nav{
+	float: right;
+	top: 5px;
+}
+
+.rightFloat{
+	float: right;
+}
+.leftFloat{
+	float: left;
+}
