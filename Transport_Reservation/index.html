@@ -6,6 +6,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width ,initial-scale=1">
 		<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/font-awesome.min.css" rel="stylesheet">
 		<link href="styles/review.css" rel="stylesheet">
 		<title>Reserve the World</title>
 	</head>
@@ -76,14 +77,14 @@
       					<div class="item">
         					<img src="pics/train.jpg" alt="Chania">
         						<div class="carousel-caption">          
-          							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         						</div>
       					</div>
     
       					<div class="item">
         					<img src="pics/bus2.jpg" alt="Flower">
         					<div class="carousel-caption">          
-          						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         					</div>
       					</div>
 
@@ -101,10 +102,84 @@
     				</a>
 	  			</div>
 			</div>
-
-			<form class="container">
-				<input type="text" name="id">
-			</form>
+			<br>
+			<!--End of Carousel element-->
+			
+			<div>
+			<!--Reservation Form-->
+			<div class="col-sm-5">
+				<div class="well">
+					<legend class="lead">
+						Start Your Journey
+					</legend>
+					<form class="form-horizontal">
+						<div class="form-group">
+							<div class="col-sm-8"> 
+								<label class="radio-inline"><input type="radio" name="oneway">One Way</label>
+								<label class="radio-inline"><input type="radio" name="return">Return</label>
+							</div>
+							<div class="dropdown col-sm-2">
+    							<button class="btn btn-primary dropdown-toggle btn-sm" type="button" data-toggle="dropdown">Bus/Train
+    							<span class="caret"></span></button>
+    							<ul class="dropdown-menu">
+      								<li><a href="#">Bus</a></li>
+      								<li><a href="#">Train</a></li>
+      
+    							</ul>
+  							</div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<label class="col-sm-4 control-label">From</label>
+								<div class="col-sm-6">
+									<input class="form-control" type="text" name="start" placeholder="starts here">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<label class="col-sm-4 control-label">To</label>
+								<div class="col-sm-6">
+									<input class="form-control" type="text" name="End" placeholder="ends here">
+								</div>
+							</div>							
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<label class="col-sm-4 control-label">Passengers</label>
+								<div class="col-sm-6">
+									<input class="form-control" type="text" name="End" placeholder="eg: 10">
+								</div>
+							</div>								
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<label class="col-sm-4 control-label">Start Date</label>
+								<div class="col-sm-6">
+									<input class="form-control" type="date" name="End">
+								</div>
+							</div>								
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<label class="col-sm-4 control-label">Return Date</label>
+								<div class="col-sm-6">
+									<input class="form-control" type="date" name="End">
+								</div>	
+							</div>							
+						</div>
+						<div class="form-group">
+							<div class="row">			
+								<button class="btn btn-primary center-block" type="submit">
+											Reserve		
+								</button>
+							</div>					
+						</div>
+					</form>
+				</div>
+			</div>
+			<!--end of reservation form-->
+			</div>
 			
 
 			<!--About us-->
@@ -112,7 +187,7 @@
 				<div class="container">
 						<div class="row container">
 						<legend>About Us</legend>
-							<div class="col-sm-8">
+							<div class="col-sm-7">
 							
 								<p class="lead">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus congue lorem vel sollicitudin. Cras efficitur, ante non porta aliquam, tellus ex ornare lacus, ut fringilla mi ligula quis dui. Integer efficitur congue elementum. Nullam id dictum urna. Aenean tincidunt, odio porttitor pulvinar maximus, purus purus maximus lectus, commodo rhoncus mi tellus id lorem. Nulla facilisi. Aliquam varius congue ante at aliquam. Aenean ut elementum massa, id lobortis nunc.
