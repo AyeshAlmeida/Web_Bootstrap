@@ -40,3 +40,21 @@
 .formBack{
   background: #808080;
 }
+
+.loginPG{
+  background: url("../pics/login.jpeg");
+}
+
+.signupPG{
+  background: url("pics/signup.jpg");
+  height: 1000px;
+}
+
+.loginmain{
+  height: 100%;
+}
+
+.formStyle{
+  padding-top: 125px;
+  padding-bottom: 125px;
+}

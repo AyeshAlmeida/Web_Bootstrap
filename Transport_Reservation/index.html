@@ -17,6 +17,13 @@
 				<div class="container topnav">
 				<!--header of the Navigation bar-->
 					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        					<span class="icon-bar"></span>
+       						<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>                        
+      					</button>
 						<a class="navbar-brand topnav" href="index.html">
 							<div class="row">
 								<img src="pics/logo.svg" alt="logo" width="35px" height="30px"> Reserve the World
@@ -24,7 +31,7 @@
 						</a>						
 					</div>
 				<!--next elements of the navigation bar-->
-					<div class="collapse navbar-collapse">
+					<div class="collapse navbar-collapse" id="myNavbar">
 						<ul class="nav navbar-nav navbar-right">
 							<li>
 								<a href="#about">
@@ -40,7 +47,7 @@
 								<a href="#contact"><span class="glyphicon glyphicon-phone"></span> Contact Us</a>
 							</li>
 							<li>
-								<a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+								<a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
 							</li>
 							<li>
 								<a href="#"><span class="glyphicon glyphicon-user"></span> Signup</a>
@@ -115,8 +122,8 @@
 					<form class="form-horizontal">
 						<div class="form-group">
 							<div class="col-sm-8"> 
-								<label class="radio-inline"><input type="radio" name="oneway">One Way</label>
-								<label class="radio-inline"><input type="radio" name="return">Return</label>
+								<label class="radio-inline"><input type="radio" name="optradio">One Way</label>
+								<label class="radio-inline"><input type="radio" name="optradio">Return</label>
 							</div>
 							<div class="dropdown col-sm-2">
     							<button class="btn btn-primary dropdown-toggle btn-sm" type="button" data-toggle="dropdown">Bus/Train
@@ -156,7 +163,7 @@
 							<div class="row">
 								<label class="col-sm-4 control-label">Start Date</label>
 								<div class="col-sm-6">
-									<input class="form-control" type="date" name="End">
+									<input class="form-control" type="date" name="start_date">
 								</div>
 							</div>								
 						</div>
@@ -164,14 +171,14 @@
 							<div class="row">
 								<label class="col-sm-4 control-label">Return Date</label>
 								<div class="col-sm-6">
-									<input class="form-control" type="date" name="End">
+									<input class="form-control" type="date" name="retrun_date" disabled="true">
 								</div>	
 							</div>							
 						</div>
 						<div class="form-group">
 							<div class="row">			
 								<button class="btn btn-primary center-block" type="submit">
-											Reserve		
+											Search		
 								</button>
 							</div>					
 						</div>
@@ -204,14 +211,14 @@
 					</p>
 				</div>
 				<div class="col-sm-5">
-					<img src="pics/traveller2.JPG" alt="logo" width="350px" height="350px">
+					<img src="pics/traveller2.JPG" class="img-responsive" alt="logo" width="350px" height="350px">
 				</div>
 			</div>
 
 			<div class="container bodyBack">
 				<legend><h2>No-Queue</h2></legend>
 				<div class="col-sm-8">
-					<img src="pics/queue1.jpg" alt="logo" width="700px" height="350px">
+					<img src="pics/queue1.jpg" class="img-responsive" alt="logo" width="700px" height="350px">
 				</div>
 				<div class="col-sm-4">
 					<p class="lead">
@@ -224,15 +231,15 @@
 					<h2>Totally-Enjoyable</h2>
 				</legend>
 				<div class="col-sm-5">
-					<img src="pics/enjoy2.jpg" alt="logo" width="430px" height="350px">
+					<img src="pics/enjoy4.jpg" alt="logo" class="img-responsive" width="430px" height="350px">
 				</div>
 				
 				<div class="col-sm-5">
-					<img src="pics/enjoy.JPG" alt="logo" width="430px" height="350px">
+					<img src="pics/enjoy.JPG" class="img-responsive" alt="logo" width="430px" height="330px">
 				</div>
 				<div class="col-sm-2">
 					<p class="lead">
-					c accumsan turpis, nec accumsan mauris. Aliquam erat volutpat. Vestibulum sodales lorem et gravida varius. Quisque pellentesque cursus augue at finibus.
+					c accumsan turpis, nec accumsan mauris. Aliquam erat volutpat. tellus id lorem.
 					</p>
 				</div>
 			</div>
@@ -296,7 +303,7 @@
 				<legend>
 					Prices
 				</legend>
-				<table class="table table-bordered table-hover">
+				<table class="table table-bordered table-hover table-responsive">
 					<thead>
 						<tr>
 							<th>
@@ -438,15 +445,15 @@
 								</li>
 								<li class="footer-menu-divider">&sdot;</li>
 								<li>
-									<a href="#">Destinations</a>
+									<a href="#dest">Destinations</a>
 								</li>
 								<li class="footer-menu-divider">&sdot;</li>
 								<li>
-									<a href="#">About Us</a>
+									<a href="#about">About Us</a>
 								</li>
 								<li class="footer-menu-divider">&sdot;</li>
 								<li>
-									<a href="#">Contact Us</a>
+									<a href="#contact">Contact Us</a>
 								</li>
 							</ul>
 						</div>
@@ -455,7 +462,8 @@
 
 				<!-- Address and COntact details-->
 				<div class="container">
-					<div  class="leftFloat">
+					<div  class="leftFloat col-sm-3">
+						<legend>Contacts</legend>
 						<address>
 							<strong>Reserve the World</strong><br>
 							1004 World Trade Centre<br>
@@ -466,7 +474,19 @@
 							<abbr title="Mail"><a href="mailto:res@rtw.com">res@rtw.com</a></abbr>
 						</address>
 					</div>
-					<div class="rightFloat">
+					<div class="col-sm-4">
+						<div>
+						<legend>Visit Us On</legend>
+						
+							<div class="btn-group-verticle">
+								<a href="https://www.facebook.com" class="btn btn-primary"><span class="fa fa-facebook-square"></span> Facebook</a>
+								<a href="https://accounts.google.com" class="btn btn-danger"><span class="fa fa-google-plus-square"> Google+</a>
+								<a href="https://twitter.com/" class="btn btn-info"><span class="fa fa-twitter"></span> Twitter</a>						
+							</div>
+						</div>
+					</div>
+					<div class="rightFloat col-sm-3">
+						<legend>Administration</legend>
 						<address>
 							<strong>John Occune</strong><br>
 							CEO<br>
