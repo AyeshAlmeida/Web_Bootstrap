@@ -42,11 +42,13 @@
 }
 
 .loginPG{
-  background: url("../pics/login.jpeg");
+  background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));
+  margin-top: 50px;
+  height:device-height;
 }
 
 .signupPG{
-  background: url("pics/signup.jpg");
+  background: url("../pics/signup.jpg");
   height: 1000px;
 }
 
@@ -56,5 +58,16 @@
 
 .formStyle{
   padding-top: 125px;
-  padding-bottom: 125px;
+  padding-bottom: 110px;
 }
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
