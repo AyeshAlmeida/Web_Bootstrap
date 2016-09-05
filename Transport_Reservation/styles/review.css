@@ -28,3 +28,15 @@
 .leftFloat{
 	float: left;
 }
+
+.aboutBack{
+  background: #74AFAD;
+}
+
+.bodyBack{
+  background: #ECECEA;
+}
+
+.formBack{
+  background: #808080;
+}
