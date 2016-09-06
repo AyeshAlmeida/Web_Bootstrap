@@ -42,7 +42,7 @@
 }
 
 .loginPG{
-  background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));
+  background-image: url("../pics/login.jpeg");
   margin-top: 50px;
   height:device-height;
 }
@@ -69,5 +69,9 @@
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
+}
+
+.newFormStyle{
+  margin: 5px;
 }
 
